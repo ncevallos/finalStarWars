@@ -8,7 +8,7 @@ var path = require("path");
 // =============================================================
 var app = express();
 var port = process.env.PORT || 3000;
- 
+
 
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.json());
@@ -86,6 +86,6 @@ app.post("/api/new", function(req, res) {
 
 // Starts the server to begin listening
 // =============================================================
-app.listen(PORT, function() {
-  console.log("App listening on PORT " + PORT);
+app.listen(port, function() {
+  console.log("App listening on PORT " + port);
 });
